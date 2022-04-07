@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`markup matches snapshots <foo attribute=\${'value'} /> 1`] = `
+Array [
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [
+          "child0",
+          "child1",
+          "child2",
+          "child3",
+          Object {
+            "children": Array [
+              "Test",
+              "buy milk",
+              "git gud",
+              Object {
+                "children": Array [
+                  "buy milk",
+                ],
+                "props": Object {},
+                "type": "div",
+              },
+              Object {
+                "children": Array [
+                  "git gud",
+                ],
+                "props": Object {},
+                "type": "div",
+              },
+            ],
+            "props": Object {
+              "foo": "",
+            },
+            "type": [Function],
+          },
+          Object {
+            "children": Array [],
+            "props": Object {},
+            "type": "div",
+          },
+        ],
+        "props": Object {},
+        "type": "div",
+      },
+    ],
+    "props": Object {
+      "attribute": "value",
+      "foo": "bar",
+    },
+    "type": "tagName",
+  },
+]
+`;
+
+exports[`markup matches snapshots <foo foo="bar" /> 1`] = `
+Array [
+  Object {
+    "children": Array [],
+    "props": Object {
+      "foo": "bar",
+    },
+    "type": "foo",
+  },
+]
+`;

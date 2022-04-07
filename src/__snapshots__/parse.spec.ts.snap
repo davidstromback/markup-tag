@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse matches snapshots "<foo bar=\\"foo\\" />" 1`] = `
+Array [
+  Object {
+    "children": Array [],
+    "props": Object {
+      "bar": "foo",
+    },
+    "type": "foo",
+  },
+]
+`;
+
+exports[`parse matches snapshots "<foo><foobar /></foo>" 1`] = `
+Array [
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [],
+        "props": Object {},
+        "type": "foobar",
+      },
+    ],
+    "props": Object {},
+    "type": "foo",
+  },
+]
+`;
+
+exports[`parse matches snapshots "<foo>Hello world</foo>" 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "Hello world",
+    ],
+    "props": Object {},
+    "type": "foo",
+  },
+]
+`;
+
+exports[`parse matches snapshots "<foobar />" 1`] = `
+Array [
+  Object {
+    "children": Array [],
+    "props": Object {},
+    "type": "foobar",
+  },
+]
+`;
