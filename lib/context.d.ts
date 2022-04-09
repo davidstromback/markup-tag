@@ -1,0 +1,10 @@
+import type { Element, ParseContext } from "./types.js";
+export declare function getStackTrace(context: ParseContext): string[];
+export declare function writeTextChild(context: ParseContext, value: string | undefined): void;
+export declare function writeInterpolatedChildren(context: ParseContext, value: any): void;
+export declare function writeAttribute(context: ParseContext, value: any): void;
+export declare function writeSpreadAttribute(context: ParseContext, value: any): void;
+export declare function startAttribute(context: ParseContext, name: string | undefined): void;
+export declare function getDisplayName(tag: any): any;
+export declare function closeElement(context: ParseContext, type: any): Element;
+export declare function startTag(context: ParseContext, type: any): void;
